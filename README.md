@@ -1,10 +1,10 @@
 # [Incubyte TDD Assessment](https://blog.incubyte.co/blog/tdd-assessment/)
-* Ruby -v 2.7.1, ubuntu or mac
+* Ruby -v 3.3.1, ubuntu or mac
 * Steps to run the application:
   - Go to ad_ror_Incubyte_test folder
-  - Run `rvm use 2.7.1` OR `rbenv local 2.7.1` command
+  - Run `rvm use 3.3.1` OR `rbenv local 3.3.1` or `asdf ` command
   - Run `bundle` command
-  - Run `ruby lib/d2h_service.rb` to run the code.
+  - Run `ruby lib/string_calculator.rb` to run the code.
   - Run `rspec spec/string_calculator_spec.rb` to run the test cases.
 * Examples with different input and output.
   ```ruby
