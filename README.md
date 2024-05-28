@@ -2,7 +2,7 @@
 * Ruby -v 3.3.1, ubuntu or mac
 * Steps to run the application:
   - Go to ad_ror_Incubyte_test folder
-  - Run `rvm use 3.3.1` OR `rbenv local 3.3.1` or `asdf ` command
+  - Run `rvm use 3.3.1` OR `rbenv local 3.3.1` or `asdf local ruby 3.3.1` command
   - Run `bundle` command
   - Run `ruby lib/string_calculator.rb` to run the code.
   - Run `rspec spec/string_calculator_spec.rb` to run the test cases.
