@@ -1,6 +1,8 @@
 class StringCalculator
   def add(str)
-    delimiter = ',|\n'
+    raise 'Invalid input' if str.include?('\n') && str.match?(/\d,\\n/m)
+
+    delimiter = ','
     return 0 if str.empty?
     str = str.gsub(' ', '')
     start_index = str.index('//')
@@ -12,5 +14,8 @@ class StringCalculator
     end
 
     str.split(/#{delimiter}/).map(&:to_i).sum
+
+  rescue => e
+    e.message
   end
 end
