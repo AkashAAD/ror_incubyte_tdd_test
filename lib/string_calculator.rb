@@ -1,8 +1,16 @@
 class StringCalculator
   def add(str)
+    delimiter = ',|\n'
     return 0 if str.empty?
     str = str.gsub(' ', '')
-    
-    str.split(',').map(&:to_i).sum
+    start_index = str.index('//')
+    end_index = str.index('\n')
+
+    if start_index
+      delimiter = str[start_index + 2..end_index-1]
+      str = str[end_index + 2..]
+    end
+
+    str.split(/#{delimiter}/).map(&:to_i).sum
   end
 end
